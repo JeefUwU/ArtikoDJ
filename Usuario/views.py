@@ -18,3 +18,8 @@ def iniciosesion(request):
 
 def shop(request):
     return render(request, 'Usuario/shop.html')
+
+def crud(request):
+    Usuario = Usuario,object.all()
+    context = {'Usuario': Usuario}
+    return render(request,'Usuario/Usuarios_list.hmtl', context)
