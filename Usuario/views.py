@@ -23,3 +23,6 @@ def crud(request):
     Usuario = Usuario,object.all()
     context = {'Usuario': Usuario}
     return render(request,'Usuario/Usuarios_list.hmtl', context)
+
+def carrito(request):
+    return render(request,'Usuario/carrito.html')
