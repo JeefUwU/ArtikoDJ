@@ -18,24 +18,26 @@ for (i = 0; i < updateBtns.length; i++) {
 }
 
 function updateUserOrder(productId, action){
-	    console.log('User is authenticated, sending data...')
+	console.log('User is authenticated, sending data...')
 
-		var url = '/update_item/'
-        
+	var url = '/store/update_item/'
+	
 
-		fetch(url, {
-			method:'POST',
-			headers:{
-				'Content-Type':'application/json',
-				'X-CSRFToken':csrftoken,
-			}, 
-			body:JSON.stringify({'productId':productId, 'action':action})
-		})
-		.then((response) => {
-		   return response.json();
-		})
-		.then((data) => {
-            console.log('Data:',data)
-		    
-		});
+	fetch(url,{
+		method:'POST',
+		headers:{
+			'Content-Type':'application/json',
+			'X-CSRFToken':csrftoken,
+		}, 
+		body:JSON.stringify({'productId':productId, 'action':action})
+	})
+	.then((response) => {
+	   return response.json();
+	})
+	.then((data) => {
+		console.log('Data:',data)
+		location.reload()
+		
+	});
 }
+
