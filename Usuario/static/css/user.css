@@ -188,11 +188,14 @@ p {
     box-sizing: border-box;
     text-decoration: none;
  }
-  
+ .profile {
+    width: 950px;
+ } 
+
  .col img {
     border-radius: 50%;
     position: relative;
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     border: 2px solid var(--main-color);
   }
