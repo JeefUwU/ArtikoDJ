@@ -115,7 +115,7 @@ body{
 .formulario__grupo-terminos,
 .formulario__mensaje,
 .formulario__grupo-btn-enviar{
-    grid-column: 2;
+    grid-column: span 2;
 }
 
 .formulario__mensaje{
@@ -130,12 +130,12 @@ body{
     display: none;
 }
 
-.formulario__mensaje p {
-    margin: 0;
-}
-
 .formulario__mensaje-activo{
     display: block;
+}
+
+.formulario__mensaje p {
+    margin: 0;
 }
 
 /*Genero*/
@@ -185,7 +185,9 @@ body{
 
 /*Boton de registro*/
 .formulario__btn{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 14px 10px;
     font-size: 16px;
     text-decoration: none;
@@ -208,7 +210,7 @@ body{
 }
 
 /*Texto "¿Tienes cuenta?"*/
-.Sing_Up{
+.SignIn{
     color: #F2387C;
     text-transform: uppercase;
     font-size: 20px;

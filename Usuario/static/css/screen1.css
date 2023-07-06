@@ -22,7 +22,7 @@
  
 }
 
-body{
+body, html{
     padding: 0;
     margin: 0;
     background-image: url(../img/bg-tiles.png);
@@ -78,44 +78,31 @@ body{
     border: 2px solid var(--tex2-color);
 }
 
-.container{
-    width: 100%;
-    margin-top: 120rem;
-    margin:auto;
-    padding: 0 1.5rem;
+/*productos */
+.imagen-container{
+    width: 80%;
+    margin: 10px;
 }
 
 
-.image-gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 1.5rem;
-    grid-template-areas:
-        'img-1 img-2 img-3 img-3 ' 
-        'img-1 img-4 img-5 img-6 ' 
-        'img-7 img-7 img-8 img-6 ';
-}
-
-.image-gallery a{
+.product-grid img{
     width: 100%;
-    height:  25rem;
+    height: 100%;
     top: 0;
     left: 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
 
 }
 
-.img-1{
+/*.img-1{
     grid-area: img-1;
     min-height: 51.5rem;
-    background-image: url("../placeholder/asset_1.jpg");
 }
 .img-2{
     grid-area: img-2;
@@ -145,7 +132,7 @@ body{
 .img-8{
     grid-area: img-8;
     background-image: url("../placeholder/asset_8.jpg");
-}
+}*/
 
 h1,h5,p,.modal-body{
 color: #F2387C;
@@ -202,10 +189,7 @@ color: #F2387C;
 }
 
 
-.container img{
-    display: block;
-    width: 100%;
-}
+
 
 
   /*Carrusel*/
